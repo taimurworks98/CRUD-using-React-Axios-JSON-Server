@@ -3,10 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import { Theme, createStyles, useTheme } from '@material-ui/core';
-
-
-const drawerWidth = 240;
+import {createStyles} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => createStyles ({
     
@@ -32,9 +29,7 @@ const useStyles = makeStyles((theme) => createStyles ({
 
 
 export default function Appbar(props) {
-    const { window } = props;
     const classes = useStyles();
-    const theme = useTheme();
     
     return (
         <div className={classes.root}>
@@ -51,9 +46,7 @@ export default function Appbar(props) {
 }
 
 export function AppbarAdd(props) {
-    const { window } = props;
     const classes = useStyles();
-    const theme = useTheme();
     
     return (
         <div className={classes.root}>
@@ -70,9 +63,7 @@ export function AppbarAdd(props) {
 }
 
 export function AppbarEdit(props) {
-    const { window } = props;
     const classes = useStyles();
-    const theme = useTheme();
     
     return (
         <div className={classes.root}>
@@ -89,9 +80,7 @@ export function AppbarEdit(props) {
 }
 
 export function AppbarDetail(props) {
-    const { window } = props;
     const classes = useStyles();
-    const theme = useTheme();
     
     return (
         <div className={classes.root}>
